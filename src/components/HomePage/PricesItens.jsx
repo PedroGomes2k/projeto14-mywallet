@@ -45,7 +45,7 @@ export default function PricesItens({ transactions }) {
 
         <article >
           <strong>Saldo</strong>
-          <Value data-test="total-amount">{result()}</Value>
+          <Value result={result()} data-test="total-amount">{result()}</Value>
         </article>
 
       </TransactionsContainer>
@@ -101,7 +101,7 @@ const ValuePrice = styled.div`
 const Value = styled.div`
   font-size: 16px;
   text-align: right;
-  color: ${(props) => (props.color === "positivo" ? "green" : "red")};
+  color: ${(props) => (props.result > 0  ? "green" : "red")};
 `
 const ListItemContainer = styled.li`
   display: flex;
