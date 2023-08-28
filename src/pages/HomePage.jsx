@@ -46,8 +46,8 @@ export default function HomePage() {
 
   return (
     <HomeContainer>
-      <Header data-test="user-name">
-        <h1>Olá, {token.name}</h1>
+      <Header>
+        <h1 data-test="user-name">Olá, {token.name}</h1>
         <BiExit data-test="logout" onClick={logOut} />
       </Header>
 
