@@ -19,7 +19,7 @@ export default function App() {
     </PagesContainer>
   )
 }
-// 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
+
 const PagesContainer = styled.main`
   background-color: #8c11be;
   width: calc(100vw - 50px);
